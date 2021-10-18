@@ -12,18 +12,12 @@ const Dog: NextPage = (props) => {
       </Head>
 
       <main>
-        <p>id: {props.animal.id}</p>
-        <h1>{props.animal.name}</h1>
-        <p>{props.animal.description}</p>
+        <p>id: id</p>
+        <h1>name</h1>
+        <p>description</p>
       </main>
     </>
   );
-};
-
-Dog.getInitialProps = ({ query }) => {
-  return {
-    animal: animals["dogs"][query.id],
-  };
 };
 
 export default Dog;
