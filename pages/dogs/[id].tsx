@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import animals from "../../animals.json";
 
 const Dog: NextPage = (props) => {
   return (
