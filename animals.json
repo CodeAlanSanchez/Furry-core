@@ -1,7 +1,0 @@
-{
-  "dogs": [
-    { "id": 1, "name": "Terry", "description": "Black fur, large paws" },
-    { "id": 2, "name": "Jason", "description": "Blond fur, shiny coat" }
-  ],
-  "cats": []
-}
