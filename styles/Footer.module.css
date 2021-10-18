@@ -1,0 +1,45 @@
+
+.footer {
+    --background: #e8eff0;
+    --shadow: #b2d7e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 25px 25px;
+}
+
+.content {
+    display: block;
+    text-align: center;
+}
+
+.donate {
+    background-color: var(--background);
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 5px;
+}
+
+.donate > * {
+    margin: 7px 0;
+}
+
+.info {
+    text-shadow: 0 1px 0 var(--shadow);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.stripe {
+    display: block;
+    color: #1ba500;
+}
+
+.bitcoin {
+    color: #ffa600;
+}
+
+.ether {
+    color: #7575d3;
+}

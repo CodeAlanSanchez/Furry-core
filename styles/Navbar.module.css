@@ -1,0 +1,12 @@
+
+.navbar { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
