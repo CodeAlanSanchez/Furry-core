@@ -7,11 +7,6 @@ import Head from "next/head";
 const Layout = ({ children }: { children: any }) => {
   return (
     <div className={styles.page}>
-      <Head>
-        <title>Furry Core</title>
-        <meta name="description" content="Cute doggo" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Navbar />
       {children}
       <Footer />
