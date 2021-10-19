@@ -14,6 +14,10 @@ const Animal: NextPage = () => {
   //   dispatch(fetchDogs);
   // }, []);
 
+  const handleClick = () => {
+    dispatch(fetchDogs);
+  };
+
   return (
     <div className={styles.content}>
       <Image
@@ -23,7 +27,7 @@ const Animal: NextPage = () => {
         height={450}
         className={styles.image}
       />
-      <Button>New Dog</Button>
+      <Button onClick={() => handleClick()}>New Dog</Button>
     </div>
   );
 };
