@@ -1,0 +1,17 @@
+.button {
+    margin: 10px 0 0;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 2.4rem;
+    border: none;
+    outline: #000 1px solid;
+}
+
+.button:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.button:active {
+    filter: brightness(70%);
+}
