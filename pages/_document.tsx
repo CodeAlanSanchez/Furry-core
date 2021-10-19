@@ -6,7 +6,6 @@ const Document: NextPage = () => {
   return (
     <Html>
       <Head>
-        <title>Furry Core</title>
         <meta name="description" content="Cute doggo" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
