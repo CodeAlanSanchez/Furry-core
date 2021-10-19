@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    border-radius: 5px;
+}
