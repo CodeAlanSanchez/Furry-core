@@ -4,13 +4,21 @@ import styles from "../styles/Layout.module.css";
 import Navbar from "./Navbar";
 import Head from "next/head";
 
+import { Provider } from "react-redux";
+import store from "../store";
+
 const Layout = ({ children }: { children: any }) => {
   return (
-    <div className={styles.page}>
-      <Navbar />
-      {children}
-      <Footer />
-    </div>
+    <Provider store={store}>
+      <div className={styles.page}>
+        <Head>
+          <title>Furry Core</title>
+        </Head>
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
+    </Provider>
   );
 };
 
