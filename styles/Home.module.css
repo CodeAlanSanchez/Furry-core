@@ -24,11 +24,11 @@
 
 .image {
   filter: brightness(50%);
-  transition: filter .05s linear;
+  transition: filter 75ms linear;
 }
 
 .image:hover {
-  filter: brightness(70%);
+  filter: brightness(90%);
 }
 
 .image:active {
