@@ -9,9 +9,11 @@ const Home: NextPage = () => {
   return (
     <main className={styles.main}>
       <Link href="/dogs">
-        <a>
-          <img
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.0UkR_Zl_lCSYZ02uBDRPQwHaEK%26pid%3DApi&f=1"
+        <a className="image-container">
+          <Image
+            src="https://images.dog.ceo/breeds/bulldog-french/n02108915_57.jpg"
+            layout="fill"
+            objectFit="contain"
             alt="dogs"
           />
         </a>
