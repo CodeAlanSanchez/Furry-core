@@ -6,7 +6,10 @@ const Document: NextPage = () => {
   return (
     <Html>
       <Head>
-        <meta name="description" content="Cute doggo" />
+        <meta
+          name="description"
+          content="Cute animals to help you destress and relax"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;600;700;900&display=swap"
           rel="stylesheet"
