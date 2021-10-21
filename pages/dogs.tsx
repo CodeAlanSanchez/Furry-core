@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDogs } from "../api";
 import Button from "../components/Button";
-import styles from "../styles/Dog.module.css";
+import styles from "../styles/Animal.module.css";
 
 interface Dog {
   dog: string;
 }
 
-const Animal: NextPage<Dog> = ({ dog }: Dog) => {
+const Dog: NextPage<Dog> = ({ dog }: Dog) => {
   const router = useRouter();
   const [data, setData] = useState(dog);
 
@@ -23,7 +23,6 @@ const Animal: NextPage<Dog> = ({ dog }: Dog) => {
   };
 
   const handleClick = () => {
-    // router.push("/dogs");
     fetchData();
   };
 
@@ -46,4 +45,4 @@ export async function getServerSideProps() {
   };
 }
 
-export default Animal;
+export default Dog;
