@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api = process.env.API || 'http://localhost:3000/api';
+const { API_URL } = process.env;
 
-export const fetchDogs = () => axios.get(`${api}/dogs`);
-export const fetchCats = () => axios.get(`${api}/cats`);
+export const fetchDogs = () => axios.get(`${API_URL}/api/breeds/image/random`);
+export const fetchCats = () => axios.get(`${API_URL}/cats`);
