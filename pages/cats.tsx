@@ -17,7 +17,7 @@ const Cat: NextPage<Cat> = ({ cat }: Cat) => {
     const req = await fetch("https://cataas.com/cat?json=true");
     const res = await req.json();
 
-    setData(res.message);
+    setData(res.url);
   };
 
   const handleClick = () => {
