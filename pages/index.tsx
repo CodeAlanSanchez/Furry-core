@@ -8,16 +8,22 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   return (
     <main className={styles.main}>
-      <Link href="/dogs">
-        <a className="image-container">
-          <Image
-            src="https://images.dog.ceo/breeds/bulldog-french/n02108915_57.jpg"
-            layout="fill"
-            objectFit="contain"
-            alt="dogs"
-          />
-        </a>
-      </Link>
+      <div className={styles.container}>
+        <div className={styles.dogs}>
+          <h4>Dogs</h4>
+          <Link href="/dogs">
+            <a className={styles.imageContainer}>
+              <Image
+                src="https://images.dog.ceo/breeds/bulldog-french/n02108915_57.jpg"
+                className={styles.image}
+                layout="fill"
+                objectFit="contain"
+                alt="dogs"
+              />
+            </a>
+          </Link>
+        </div>
+      </div>
     </main>
   );
 };
