@@ -1,15 +1,15 @@
-.container, .dogs {
+.container, .animals {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 
-.dogs {
+.animals {
   flex-flow: column nowrap;
 }
 
-.dogs h4 {
+.animals h4 {
   margin-bottom: 25px;
 }
 
