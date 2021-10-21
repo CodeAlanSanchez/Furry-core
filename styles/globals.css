@@ -54,3 +54,10 @@ a {
   width: 800px;
   height: 450px;
 }
+
+@media only screen and (max-width: 600px) {
+  .image-container {
+    width: 380px;
+    height: 213.75px;
+  }
+}
