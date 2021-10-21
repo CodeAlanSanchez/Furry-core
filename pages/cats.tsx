@@ -43,8 +43,6 @@ export async function getServerSideProps() {
   const res = await fetch("https://cataas.com/cat?json=true");
   const { url: cat } = await res.json();
 
-  console.log(cat);
-
   return {
     props: { cat },
   };
