@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <div className={styles.animals}>
           <h4>Cats</h4>
-          <Link href="/dogs">
+          <Link href="/cats">
             <a className={styles.imageContainer}>
               <Image
                 src="https://cataas.com/cat/616de562fd416c0017325d2a"
