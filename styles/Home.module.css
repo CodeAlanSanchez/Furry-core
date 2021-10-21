@@ -40,3 +40,9 @@
   width: 400px;
   height: 225px;
 }
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  .image {
+    filter: brightness(90%);
+  }
+}
