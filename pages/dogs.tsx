@@ -1,35 +1,49 @@
 import type { NextPage } from "next";
+import { useRouter } from "next/router";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDogs } from "../api";
 import Button from "../components/Button";
 import styles from "../styles/Dog.module.css";
 
-const Animal: NextPage = () => {
-  const dispatch = useDispatch();
-  const dogs = useSelector((state: { dogs: [{}] }) => state.dogs);
+interface Dog {
+  dog: string;
+}
 
-  // useEffect(() => {
-  //   dispatch(fetchDogs);
-  // }, []);
+const Animal: NextPage<Dog> = ({ dog }: Dog) => {
+  const router = useRouter();
+  const [data, setData] = useState(dog);
+
+  const fetchData = async () => {
+    const req = await fetch("https://dog.ceo/api/breeds/image/random");
+    const res = await req.json();
+
+    setData(res.message);
+  };
 
   const handleClick = () => {
-    dispatch(fetchDogs);
+    // router.push("/dogs");
+    fetchData();
   };
 
   return (
     <div className={styles.content}>
-      <Image
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Qe-7V3Hiec0ZVD2f31FFzQHaEK%26pid%3DApi&f=1"
-        alt="Dog"
-        width={800}
-        height={450}
-        className={styles.image}
-      />
+      <div className="image-container">
+        <Image src={data} layout="fill" objectFit="contain" alt="dogs" />
+      </div>
       <Button onClick={() => handleClick()}>New Dog</Button>
     </div>
   );
 };
+
+export async function getServerSideProps() {
+  const res = await fetch("https://dog.ceo/api/breeds/image/random");
+  const { message: dog } = await res.json();
+
+  return {
+    props: { dog },
+  };
+}
 
 export default Animal;
