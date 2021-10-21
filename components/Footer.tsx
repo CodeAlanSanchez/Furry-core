@@ -8,9 +8,6 @@ const Footer = () => {
       <div className={styles.content}>
         <h4>Like this page? Consider donating 🐶</h4>
         <div className={styles.donate}>
-          {/* <Link href="/donate">
-            <a className={[styles.stripe, styles.info].join(" ")}>Stripe</a>
-          </Link> */}
           <p className={[styles.bitcoin, styles.info].join(" ")}>
             Bitcoin address: 17c4Zh3pvdAsaYYMRTuw6QnK3ZngAcRmKt
           </p>

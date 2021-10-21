@@ -10,7 +10,7 @@
 }
 
 .content {
-    display: block;
+    display: inline;
     text-align: center;
 }
 
@@ -31,15 +31,16 @@
     padding: 5px;
 }
 
-.stripe {
-    display: block;
-    color: #1ba500;
-}
-
 .bitcoin {
     color: #ffa600;
 }
 
 .ether {
     color: #7575d3;
+}
+
+@media only screen and (max-width: 600px) {
+    .donate > p {
+        font-size: 1.4rem;
+    }
 }
