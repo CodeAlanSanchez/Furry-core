@@ -12,10 +12,10 @@ const Footer = () => {
             <a className={[styles.stripe, styles.info].join(" ")}>Stripe</a>
           </Link> */}
           <p className={[styles.bitcoin, styles.info].join(" ")}>
-            Bitcoin address: 9283fhjdpsqo8rj4p9asdjp9ausf89j
+            Bitcoin address: 17c4Zh3pvdAsaYYMRTuw6QnK3ZngAcRmKt
           </p>
           <p className={[styles.ether, styles.info].join(" ")}>
-            Ethereum address: 9283fhjdpsqo8rj4p9asdjp9ausf89j
+            Ethereum address: 0xAe51562b8fe1aE7bA13Ed8497CEdfEbC46Ffe5F3
           </p>
         </div>
       </div>
