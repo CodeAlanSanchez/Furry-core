@@ -11,6 +11,10 @@ const Document: NextPage = () => {
           href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;600;700;900&display=swap"
           rel="stylesheet"
         />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Festive&display=swap"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
