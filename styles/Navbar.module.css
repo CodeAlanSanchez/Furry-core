@@ -1,23 +1,29 @@
-
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-flow: row nowrap;
-    padding: 5px;
-    min-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  padding: 5px;
+  min-width: 350px;
 }
 
 .navbar a {
-    text-decoration: none;
-    transition: color 75ms linear;
+  text-decoration: none;
+  transition: color 75ms linear;
+  margin: 0 25px;
 }
 
 .navbar a:hover {
-    color: #567cce;
+  color: #567cce;
 }
 
 .logo {
-    font-family: Festive, Arial, Helvetica, sans-serif;
-    font-size: 4.8rem;
+  font-family: Festive, Arial, Helvetica, sans-serif;
+  font-size: 4.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar a {
+    margin: 0 5px;
+  }
 }
