@@ -16,7 +16,7 @@ const Layout = ({ children }: { children: any }) => {
         </Head>
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Provider>
   );
