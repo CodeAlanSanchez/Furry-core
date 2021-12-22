@@ -12,7 +12,7 @@ const Navbar = () => {
       </Link>
       <Link href="/">
         <a>
-          <h3 className={styles.logo}>Furry Core</h3>
+          <h3 className={styles.logo}>Pet Pictures</h3>
         </a>
       </Link>
       <Link href="/dogs">

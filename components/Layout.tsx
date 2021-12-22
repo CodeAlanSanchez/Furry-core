@@ -12,7 +12,7 @@ const Layout = ({ children }: { children: any }) => {
     <Provider store={store}>
       <div className={styles.page}>
         <Head>
-          <title>Furry Core</title>
+          <title>Pet Pictures</title>
         </Head>
         <Navbar />
         {children}
